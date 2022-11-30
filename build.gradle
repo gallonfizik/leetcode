@@ -8,6 +8,10 @@ sourceCompatibility = 17
 targetCompatibility = 17
 
 dependencies {
+    testCompileOnly("org.projectlombok:lombok:${lombok_version}")
+    testAnnotationProcessor("org.projectlombok:lombok:${lombok_version}")
+
+    testImplementation("ch.qos.logback:logback-classic:${logback_version}")
     testImplementation("org.assertj:assertj-core:${assertj_version}")
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junit_version}")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:${junit_version}")
