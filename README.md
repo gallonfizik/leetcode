@@ -1,10 +1,12 @@
 # leetcode
 
 ## Disclaimer and restrictions
+
 * done for own fun
 * all production code is vanilla Java (see [build.gradle](build.gradle))
 
 ## Solutions
+
 1. <a href="https://leetcode.com/problems/valid-sudoku">Valid sudoku</a>
     1. [Straightforward solution](src/main/java/org/gallonfizik/leetcode/valid_sudoku/Straightforward.java)
 
@@ -21,3 +23,7 @@
         * single pass over input data
 
        Throughput on my machine: ~1100 kilo solutions/sec in worst case(s).
+2. <a href="https://leetcode.com/problems/two-sum/">Two sum</a>
+
+   Pretty trivial hash map [implementation](src/main/java/org/gallonfizik/leetcode/two_sum/TwoSum.java). O(N^2) approach could be viable for problems of size <~ 5.
+    
