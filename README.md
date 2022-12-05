@@ -26,12 +26,11 @@
 2. <a href="https://leetcode.com/problems/two-sum/">Two sum</a>
 
    Pretty trivial hash map [implementation](src/main/java/org/gallonfizik/leetcode/two_sum/TwoSum.java). O(N^2) approach could be viable for problems of size <~ 5.
-3. <a href="https://leetcode.com/problems/binary-tree-paths">Binary tree paths</a>
-
+3. <a href="https://leetcode.com/problems/binary-tree-paths">Binary tree paths</a> –
     [readme](src/main/java/org/gallonfizik/leetcode/tree_paths/readme.md)
-4. <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array">Find minimum in rotated sorted array</a>
-    
+4. <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array">Find minimum in rotated sorted array</a> – 
     [readme](src/main/java/org/gallonfizik/leetcode/minimum_rotated_sorted/readme.md)
-5. <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array">Find minimum in rotated sorted array</a>
-    
+5. <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array">Find minimum in rotated sorted array</a> –
     [readme](src/main/java/org/gallonfizik/leetcode/minimum_rotated_sorted/MinimumRotatedSorted.java)
+6. <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii">Find minimum in rotated sorted array with duplicates</a> – 
+   [readme](src/main/java/org/gallonfizik/leetcode/minimum_rotated_sorted_duplicates/MinimumRotatedSortedDuplicates.java)
