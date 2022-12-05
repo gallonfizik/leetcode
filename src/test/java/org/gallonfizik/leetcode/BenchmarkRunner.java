@@ -1,6 +1,8 @@
 package org.gallonfizik.leetcode;
 
 import java.util.DoubleSummaryStatistics;
+import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 
 public class BenchmarkRunner {
@@ -13,13 +15,19 @@ public class BenchmarkRunner {
     }
 
     public void benchmark(Runnable subject) {
+        benchmark(() -> null, none -> subject.run());
+    }
+
+    public <T> void benchmark(Supplier<T> batchDataGenerator, Consumer<T> subject) {
         DoubleStatistics statistics = new DoubleStatistics();
-        warmup(subject);
+        warmup(batchDataGenerator, subject);
 
         for (int batch = 0; batch < batches; batch++) {
+            T batchData = batchDataGenerator.get();
+
             long tic = System.nanoTime();
             for (int i = 0; i < batchSize; i++) {
-                subject.run();
+                subject.accept(batchData);
             }
             double throughput = 1.0e6 * batchSize / (System.nanoTime() - tic);
             statistics.accept(throughput);
@@ -30,8 +38,13 @@ public class BenchmarkRunner {
     }
 
     private void warmup(Runnable subject) {
+        warmup(() -> null, none -> subject.run());
+    }
+
+    private <T> void warmup(Supplier<T> batchDataGenerator, Consumer<T> subject) {
+        T data = batchDataGenerator.get();
         for (int i = 0; i < 0.05 * batchSize * batches; i++) {
-            subject.run();
+            subject.accept(data);
         }
     }
 }

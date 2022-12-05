@@ -29,3 +29,9 @@
 3. <a href="https://leetcode.com/problems/binary-tree-paths">Binary tree paths</a>
 
     [readme](src/main/java/org/gallonfizik/leetcode/tree_paths/readme.md)
+4. <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array">Find minimum in rotated sorted array</a>
+    
+    [readme](src/main/java/org/gallonfizik/leetcode/minimum_rotated_sorted/readme.md)
+5. <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array">Find minimum in rotated sorted array</a>
+    
+    [readme](src/main/java/org/gallonfizik/leetcode/minimum_rotated_sorted/MinimumRotatedSorted.java)
