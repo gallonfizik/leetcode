@@ -26,4 +26,6 @@
 2. <a href="https://leetcode.com/problems/two-sum/">Two sum</a>
 
    Pretty trivial hash map [implementation](src/main/java/org/gallonfizik/leetcode/two_sum/TwoSum.java). O(N^2) approach could be viable for problems of size <~ 5.
-    
+3. <a href="https://leetcode.com/problems/binary-tree-paths">Binary tree paths</a>
+
+    [readme](src/main/java/org/gallonfizik/leetcode/tree_paths/readme.md)
